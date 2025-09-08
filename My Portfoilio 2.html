@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<style>
+    body{
+        margin:0;
+        padding:0;
+        font-family: sans-serif;
+        background: #f4f4f9;
+        transition:all 0.3s ease;
+    }
+    header{
+        text-align: center;
+        padding:80px;
+        background:linear-gradient(135deg,#1f1c2c, #928dab);
+        color:white;
+        border-radius: 0 0 50px 50px;
+        animation:fadeIn 1.2s ease-in-out;
+    }
+    header h1{
+        font-size: 48px;
+        margin: 0;
+    }
+    span{
+        background: linear-gradient(45deg, #ff4b5c, #ff9a00);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip:text;
+    }
+    section{
+        padding:60px 20px;
+        max-width:900px;
+        margin:auto;
+        animation:fadeUp 1s ease-in-out;
+    }
+    h2{
+        border-bottom:3px solid #ff4b5c;
+        display:inline-block;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 17px;
+        
+    }
+    ul{
+        list-style: none;
+        padding:0;
+    }
+    li{
+        background-color: #eee;
+        margin:8px 0px;
+        padding:12px;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+    li:hover{
+        transform: scale(1.05);
+        background: #ffefff;
+    }
+    footer{
+        background-color: #1f1c2c;
+        color:white;
+        margin-top:30px;
+        padding:20px;
+        text-align:center;
+    }
+    @keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform:translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0px);
+    }
+}
+    @keyframes fadeUp{
+        0%{
+            opacity: 0;
+            transform:translateY(40px);
+        }
+        100%{
+            opacity: 1;
+            transform:translateY(0px);
+        }
+    }
+
+</style>
+<body>
+    <header>
+        <h1>Hi, I'm <span>Sagar Verma</span></h1>
+        <p>Aspiring Developer | Game Maker | AI Enthusiast</p>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a developer skilled in Python, C++, C, JavaScript, HTML, CSS and Game Development. I love building AI tools, websites and games.</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python / AI</li>
+            <li>C++ / C / C#</li>
+            <li>Game Development (Unity)</li>
+            <li>Web Development (HTML, CSS, JavaScript)</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>(I'll add my projects here soon!)</p>
+    </section>
+    <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: sagarverma750000@gmail.com</p>
+    <p>GitHub: github.com/sagarverma</p>
+    <p>Instagram: @sagar_handle</p>
+  </section>
+  <footer>
+    <p>© 2024 Sagar Verma. All rights reserved.</p>
+</footer>
+</body>
+</html>
