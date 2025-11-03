@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Portfolio of Sagar Verma - Web Developer, AI Enthusiast, and Programmer.">
-    <title>Sagar Verma | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
 </head>
 <style>
     body{
@@ -88,7 +88,102 @@
             transform:translateY(0px);
         }
     }
+    .project-grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 25px;
+      width:200px;
+    }
+    .project-card{
+        background-color: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        animation: fadeUp 1s ease-in-out;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
 
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .project-content {
+      padding: 20px;
+    }
+
+    .project-content h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      color: #1f1c2c;
+    }
+
+    .project-content p {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .project-content a {
+      display: inline-block;
+      text-decoration: none;
+      background: linear-gradient(45deg, #ff4b5c, #ff9a00);
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .project-content a:hover {
+      background: linear-gradient(45deg, #ff9a00, #ff4b5c);
+    }
+
+    footer {
+      background-color: #1f1c2c;
+      color: white;
+      margin-top: 30px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 34px;
+      }
+      header p {
+        font-size: 16px;
+      }
+      .project-content h3 {
+        font-size: 20px;
+      }
+    }
 </style>
 <body>
     <header>
@@ -110,19 +205,24 @@
     </section>
     <section id="projects">
         <h2>Projects</h2>
-        <p>(I'll add my projects here soon!)</p>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="Screenshot_3-11-2025_15302_gemini.google.com.jpeg">
+                <div class="project-content">
+                    <h3>Mobile Hub</h3>
+                    <p>A tech website which helps people to finding best mobile in their budget</p>
+                    <a href="https://mobile-hub.onrender.com/search">View Project</a>
+                </div>
+            </div>
     </section>
     <section id="contact">
     <h2>Contact</h2>
-    <p>Email: snippetsagar@gmail.com</p>
-    <p>GitHub: github.com/snippetsagar</p>
-    <p>Instagram: @sagar_handle</p>
+    <p>Email: <strong>sagarverma750000@gmail.com</strong></p>
+    <p>GitHub: <a href="https://github.com/snippetsagar" target="_blank">github.com/snippetsagar</a></p>
+    <p>Instagram: @snippetsagar</p>
   </section>
   <footer>
     <p>© 2024 Sagar Verma. All rights reserved.</p>
 </footer>
 </body>
 </html>
-
-
-
